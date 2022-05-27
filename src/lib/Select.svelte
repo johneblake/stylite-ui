@@ -8,7 +8,7 @@
     for={label}
     class="absolute left-2 -top-3 cursor-text px-1 rounded-md
       transition-all
-      text-sm text-gellert-red-500 bg-white"
+      text-sm text-yellow-500 bg-white"
   >
     {label}
   </label>
@@ -25,7 +25,7 @@
 
 <style lang="postcss">
   select {
-    @apply border border-gellert-blue-300 rounded-md px-3 py-2;
-    @apply focus:border-gellert-blue-200 hover:bg-gellert-blue-100;
+    @apply border border-emerald-300 rounded-md px-3 py-2;
+    @apply focus:border-emerald-200 hover:bg-emerald-100;
   }
 </style>

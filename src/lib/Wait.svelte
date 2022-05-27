@@ -11,7 +11,7 @@
   >
     <div class="relative mx-auto my-auto">
       <div class="flex justify-center items-center pt-48">
-        <div class="animate-spin rounded-full h-64 w-64 border-t-4 border-b-4 border-gellert-blue-500" />
+        <div class="animate-spin rounded-full h-64 w-64 border-t-4 border-b-4 border-emerald-500" />
       </div>
     </div>
   </div>

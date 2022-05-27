@@ -19,11 +19,11 @@
         {item}
       </li>
     {/each}
-    <li class="flex-1 border-b border-gellert-blue-500 cursor-default" />
+    <li class="flex-1 border-b border-emerald-500 cursor-default" />
   </ul>
 </div>
 <div
-  class="flex flex-col flex-grow overflow-y-hidden border-l border-r border-b border-gellert-blue-500 mb-2 shadow-md"
+  class="flex flex-col flex-grow overflow-y-hidden border-l border-r border-b border-emerald-500 mb-2 shadow-md"
 >
   <slot />
 </div>
@@ -33,9 +33,9 @@
     @apply flex cursor-pointer;
   }
   .tab {
-    @apply bg-white inline-block px-3 py-2 rounded-t-md border-b border-gellert-blue-900;
+    @apply bg-white inline-block px-3 py-2 rounded-t-md border-b border-emerald-500;
   }
   .tab-active {
-    @apply border-t border-l border-r border-b-0 border-gellert-blue-900;
+    @apply border-t border-l border-r border-b-0 border-emerald-500;
   }
 </style>

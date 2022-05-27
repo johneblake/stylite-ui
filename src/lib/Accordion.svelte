@@ -28,7 +28,7 @@
 
 <style lang="postcss">
   .accordion-left-active {
-    @apply border-l-2 border-gellert-blue-500;
+    @apply border-l-2 border-emerald-500;
   }
   .accordion-left-inactive {
     @apply border-l-2 border-transparent;

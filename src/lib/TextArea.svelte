@@ -20,11 +20,11 @@
       for={label}
       class="absolute left-2 -top-3 cursor-text px-1 rounded-md
         transition:all
-        text-sm text-gellert-red-500 bg-white
-        peer-placeholder-shown:text-base peer-placeholder-shown:text-gellert-red-200
+        text-sm text-yellow-500 bg-white
+        peer-placeholder-shown:text-base peer-placeholder-shown:text-yellow-200
         peer-placeholder-shown:top-3
-        peer-focus:-top-3 peer-focus:text-gellert-red-500 peer-focus:text-sm
-        peer-hover:bg-gellert-blue-100"
+        peer-focus:-top-3 peer-focus:text-yellow-500 peer-focus:text-sm
+        peer-hover:bg-emerald-100"
       on:click={() => textArea.focus()}
     >
       {label}
@@ -34,7 +34,7 @@
 
 <style lang="postcss">
   textarea {
-    @apply border border-gellert-blue-300 rounded-md px-3;
-    @apply hover:bg-gellert-blue-100;
+    @apply border border-emerald-300 rounded-md px-3;
+    @apply hover:bg-emerald-100;
   }
 </style>

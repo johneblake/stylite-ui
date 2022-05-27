@@ -1,12 +1,12 @@
 <script lang="ts">
   import { mdiFileUpload } from '@mdi/js';
   import { createEventDispatcher } from 'svelte';
-  import Button from '$lib/ui/Button.svelte';
-  import Icon from '$lib/ui/Icon.svelte';
+  import Button from '$lib/Button.svelte';
+  import Icon from '$lib/Icon.svelte';
 
   const dispatch = createEventDispatcher();
 
-  $: icon = $$props.disabled ? 'text-gellert-blue-100' : 'text-gellert-blue-500';
+  $: icon = $$props.disabled ? 'text-emerald-100' : 'text-emerald-500';
 
   function uploadFile(evt: Event): void {
     const file = (evt.target as HTMLInputElement).files?.item(0);
