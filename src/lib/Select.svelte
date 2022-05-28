@@ -3,7 +3,7 @@
   export let label: string = '';
 </script>
 
-<div class={`relative ${$$restProps.class}`}>
+<div class={`Select ${$$restProps.class}`}>
   <label
     for={label}
     class="absolute left-2 -top-3 cursor-text px-1 rounded-md
@@ -27,5 +27,8 @@
   select {
     @apply border border-emerald-300 rounded-md px-3 py-2;
     @apply focus:border-emerald-200 hover:bg-emerald-100;
+  }
+  .Select {
+    @apply relative;
   }
 </style>

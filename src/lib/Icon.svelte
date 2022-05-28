@@ -3,7 +3,7 @@
 </script>
 
 <svg
-  class={`w-6 h-6 inline-block stroke-current ${$$restProps.class}`}
+  class={`Icon ${$$restProps.class}`}
   viewBox="0 0 24 24"
   fill-rule="evenodd"
   clip-rule="evenodd"
@@ -15,5 +15,8 @@
 <style lang="postcss">
   svg.disabled {
     @apply text-gray-100;
+  }
+  .Icon {
+    @apply w-6 h-6 inline-block stroke-current;
   }
 </style>

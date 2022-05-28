@@ -6,7 +6,7 @@
   let input: HTMLInputElement;
 </script>
 
-<div class={`relative ${$$props.class}`}>
+<div class={`TextField ${$$props.class}`}>
   <input
     name={label}
     type="text"
@@ -36,5 +36,8 @@
   input[type='text'] {
     @apply border border-emerald-300 rounded-md px-3 py-2;
     @apply hover:bg-emerald-100;
+  }
+  .TextField {
+    @apply relative;
   }
 </style>

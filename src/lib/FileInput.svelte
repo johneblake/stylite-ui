@@ -6,8 +6,6 @@
 
   const dispatch = createEventDispatcher();
 
-  $: icon = $$props.disabled ? 'text-emerald-100' : 'text-emerald-500';
-
   function uploadFile(evt: Event): void {
     const file = (evt.target as HTMLInputElement).files?.item(0);
     (evt.target as HTMLInputElement).value = '';
@@ -15,16 +13,28 @@
   }
 </script>
 
-<div class={`inline-block overflow-hidden relative w-64 ${$$props.class}`}>
+<div class={`FileInput ${$$props.class}`}>
   <Button disabled={$$props.disabled}>
-    <Icon src={mdiFileUpload} class={`fill-current mr-2 ${icon}`} />
+    <Icon src={mdiFileUpload} class="FileIcon" />
     Upload Upgrade File
   </Button>
   <input
-    class="cursor-pointer absolute block py-2 px-3 w-full opacity-0 top-0 right-0"
+    class="input"
     type="file"
     disabled={$$props.disabled}
     accept="*.agstr"
     on:change={uploadFile}
   />
 </div>
+
+<style lang="postcss">
+  .FileInput {
+    @apply inline-block overflow-hidden relative w-64;
+  }
+  .FileIcon {
+    @apply fill-current mr-2 text-emerald-500 disabled:text-emerald-100;
+  }
+  .input {
+    @apply cursor-pointer absolute block py-2 px-3 w-full opacity-0 top-0 right-0;
+  }
+</style>

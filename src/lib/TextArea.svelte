@@ -5,7 +5,7 @@
   let textArea: HTMLTextAreaElement;
 </script>
 
-<div class={`relative ${$$props.class}`}>
+<div class={`TextArea ${$$props.class}`}>
   <textarea
     name={label}
     class="peer p-2 block w-full appearance-none resize-none focus:outline-none"
@@ -36,5 +36,8 @@
   textarea {
     @apply border border-emerald-300 rounded-md px-3;
     @apply hover:bg-emerald-100;
+  }
+  .TextArea {
+    @apply relative;
   }
 </style>
