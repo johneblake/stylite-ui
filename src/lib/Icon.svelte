@@ -17,6 +17,6 @@
     @apply text-gray-100;
   }
   .Icon {
-    @apply w-6 h-6 inline-block stroke-current;
+    @apply fill-current text-emerald-500 w-6 h-6 inline-block stroke-current;
   }
 </style>

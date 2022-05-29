@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
   
-  import Icon from "./Icon.svelte";
+  import Icon from "$lib/Icon.svelte";
 
   export let icon: string;
   export let name: string;
@@ -25,29 +25,26 @@
 
 </script>
   
-  <div class="container" bind:this={active}>
-    <a class="anchor"
-      on:click={setActive}
-      class:selected={isSelected}
-      href={link}
-    >
-      <Icon src={icon} class="icon" />
-      {name}
-    </a>
-  </div>
+<div class="container" bind:this={active}>
+  <a class="anchor"
+    on:click={setActive}
+    class:selected={isSelected}
+    href={link}
+  >
+    <Icon src={icon} />
+    {name}
+  </a>
+</div>
   
-  <style lang="postcss">
-    .container {
-      @apply flex flex-row w-full;
-    }
-    .anchor {
-      @apply flex flex-row w-full text-2xl items-center mb-1 hover:bg-emerald-100 px-4;
-    }
-    .icon {
-      @apply fill-current text-yellow-500 mr-3;
-    }
-    .selected {
-      @apply bg-emerald-300;
-    }
-  </style>
+<style lang="postcss">
+  .container {
+    @apply flex flex-row w-full;
+  }
+  .anchor {
+    @apply flex flex-row w-full text-2xl items-center mb-1 hover:bg-emerald-100 px-4;
+  }
+  .selected {
+    @apply bg-emerald-300;
+  }
+</style>
   
